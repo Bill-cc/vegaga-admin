@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Version="4.9.32" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="40429.8842764352" ReportOptions.Description.Text="" ReportOptions.LastChange="40520.7492250694" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;begin&#13;&#10;&#13;&#10;end." PropData="044C65667403080103546F70021008446174617365747301010C3400000020446174615365743D2264626449444F50726F647563742220446174615365744E616D653D2266727849444F50726F647563742200010C3800000020446174615365743D22646264496E4465706F744F726465722220446174615365744E616D653D22667278496E4465706F744F72646572220000095661726961626C65730100055374796C650100">
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="218" PaperHeight="140" PaperSize="256" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxReportTitle Name="ReportTitle1" Height="34.01577" Left="0" Top="18.89765" Width="748.34694">
+      <TfrxMemoView Name="Memo2" Left="253.22851" Top="0" Width="245.66945" Height="30.23624" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-29" Font.Name="����" Font.Style="1" ParentFont="False" Text="唯家佳商品入库单"/>
+      <TfrxLineView Name="Line1" Left="3.77953" Top="34.01577" Width="718.1107" Height="0" ShowHint="False" Diagonal="True"/>
+    </TfrxReportTitle>
+    <TfrxMasterData Name="MasterData1" Height="26.45671" Left="0" Top="113.3859" Width="748.34694" ColumnWidth="0" ColumnGap="0" DataSet="dbdInDepotOrder" DataSetName="frxInDepotOrder" RowCount="0">
+      <TfrxLineView Name="Line2" Left="0" Top="26.45671" Width="718.1107" Height="0" ShowHint="False" Diagonal="True"/>
+      <TfrxMemoView Name="InStockDBDORDERGOODSNO" Left="3.77953" Top="3.77952999999999" Width="71.81107" Height="18.89765" ShowHint="False" DataSetName="InStockDBD" Text="订单编号："/>
+      <TfrxMemoView Name="InStockDBDCONTRACTNO" Left="279.68522" Top="3.77952999999999" Width="60.47248" Height="18.89765" ShowHint="False" DataSetName="InStockDBD" Text="合同号："/>
+      <TfrxMemoView Name="Date" Left="548.03185" Top="3.77952999999999" Width="173.85838" Height="18.89765" ShowHint="False" DisplayFormat.FormatStr="yyyy��MM��dd��" DisplayFormat.Kind="fkDateTime" Text="打印日期：[Date]"/>
+      <TfrxMemoView Name="frxInDepotOrderstk_no" Left="79.37013" Top="3.77952999999999" Width="196.53556" Height="18.89765" ShowHint="False" DataField="stk_no" DataSet="dbdInDepotOrder" DataSetName="frxInDepotOrder" Text="[frxInDepotOrder.&#34;stk_no&#34;]"/>
+      <TfrxMemoView Name="frxInDepotOrdersupplier_contract" Left="340.1577" Top="3.77952999999999" Width="204.09462" Height="18.89765" ShowHint="False" DataField="supplier_contract" DataSet="dbdInDepotOrder" DataSetName="frxInDepotOrder" Text="[frxInDepotOrder.&#34;supplier_contract&#34;]"/>
+    </TfrxMasterData>
+    <TfrxPageFooter Name="PageFooter1" Height="22.67718" Left="0" Top="362.83488" Width="748.34694">
+      <TfrxMemoView Name="Memo1" Left="642.5201" Top="0" Width="75.5906" Height="18.89765" ShowHint="False" HAlign="haRight" Text="第[Page#]页"/>
+      <TfrxLineView Name="Line3" Left="0" Top="0" Width="725.66976" Height="0" ShowHint="False" Diagonal="True"/>
+    </TfrxPageFooter>
+    <TfrxDetailData Name="DetailData1" Height="22.67718" Left="0" Top="207.87415" Width="748.34694" ColumnWidth="0" ColumnGap="0" DataSet="dbdIDOProduct" DataSetName="frxIDOProduct" RowCount="0">
+      <TfrxMemoView Name="Line" Left="0" Top="0" Width="34.01577" Height="18.89765" ShowHint="False" Text="[Line#]"/>
+      <TfrxMemoView Name="frxIDOProductproduct_sku" Left="34.01577" Top="0" Width="68.03154" Height="18.89765" ShowHint="False" DataField="product_sku" DataSet="dbdIDOProduct" DataSetName="frxIDOProduct" Text="[frxIDOProduct.&#34;product_sku&#34;]"/>
+      <TfrxMemoView Name="frxIDOProductname" Left="105.82684" Top="0" Width="151.1812" Height="18.89765" ShowHint="False" DataField="name" DataSet="dbdIDOProduct" DataSetName="frxIDOProduct" Text="[frxIDOProduct.&#34;name&#34;]"/>
+      <TfrxMemoView Name="frxIDOProductean" Left="260.78757" Top="0" Width="64.25201" Height="18.89765" ShowHint="False" DataField="ean" DataSet="dbdIDOProduct" DataSetName="frxIDOProduct" Text="[frxIDOProduct.&#34;ean&#34;]"/>
+      <TfrxMemoView Name="frxIDOProductbrand_name" Left="325.03958" Top="0" Width="105.82684" Height="18.89765" ShowHint="False" DataField="brand_name" DataSet="dbdIDOProduct" DataSetName="frxIDOProduct" Text="[frxIDOProduct.&#34;brand_name&#34;]"/>
+      <TfrxMemoView Name="frxIDOProductp_size" Left="430.86642" Top="0" Width="45.35436" Height="18.89765" ShowHint="False" DataField="p_size" DataSet="dbdIDOProduct" DataSetName="frxIDOProduct" Text="[frxIDOProduct.&#34;p_size&#34;]"/>
+      <TfrxMemoView Name="frxIDOProductwh_n" Left="476.22078" Top="0" Width="102.04731" Height="18.89765" ShowHint="False" DataField="wh_n" DataSet="dbdIDOProduct" DataSetName="frxIDOProduct" Text="[frxIDOProduct.&#34;wh_n&#34;]"/>
+      <TfrxMemoView Name="frxIDOProductmemo" Left="623.62245" Top="0" Width="400.63018" Height="18.89765" ShowHint="False" DataField="memo" DataSet="dbdIDOProduct" DataSetName="frxIDOProduct" Text="[frxIDOProduct.&#34;memo&#34;]"/>
+      <TfrxLineView Name="Line6" Left="0" Top="22.67718" Width="748.34694" Height="0" ShowHint="False" Frame.Typ="4"/>
+      <TfrxMemoView Name="frxIDOProductproduct_num" Left="578.26809" Top="0" Width="41.57483" Height="18.89765" ShowHint="False" DataField="product_num" DataSet="dbdIDOProduct" DataSetName="frxIDOProduct" Text="[frxIDOProduct.&#34;product_num&#34;]"/>
+    </TfrxDetailData>
+    <TfrxFooter Name="Footer1" Height="49.13389" Left="0" Top="253.22851" Width="748.34694">
+      <TfrxMemoView Name="Memo14" Left="241.88992" Top="3.77953000000005" Width="86.92919" Height="18.89765" ShowHint="False" Text="总收货金额："/>
+      <TfrxMemoView Name="Memo15" Left="15.11812" Top="26.45671" Width="60.47248" Height="18.89765" ShowHint="False" Text="收货人："/>
+      <TfrxMemoView Name="Memo16" Left="257.00804" Top="26.45671" Width="71.81107" Height="18.89765" ShowHint="False" Text="审核人员："/>
+      <TfrxMemoView Name="Memo17" Left="506.45702" Top="26.45671" Width="204.09462" Height="18.89765" ShowHint="False" Text="审核时间：           年     月     日"/>
+      <TfrxLineView Name="Line4" Left="0" Top="0" Width="718.1107" Height="0" ShowHint="False" Diagonal="True"/>
+      <TfrxMemoView Name="Memo13" Left="3.77953" Top="3.77953000000005" Width="71.81107" Height="18.89765" ShowHint="False" Text="收货总数："/>
+      <TfrxMemoView Name="frxInDepotOrderstkp_num" Left="79.37013" Top="3.77952999999999" Width="158.74026" Height="18.89765" ShowHint="False" DataField="stkp_num" DataSet="dbdInDepotOrder" DataSetName="frxInDepotOrder" Text="[frxInDepotOrder.&#34;stkp_num&#34;]"/>
+      <TfrxMemoView Name="frxInDepotOrderstk_price" Left="332.59864" Top="3.77952999999999" Width="170.07885" Height="18.89765" ShowHint="False" DataField="stk_price" DataSet="dbdInDepotOrder" DataSetName="frxInDepotOrder" Text="[frxInDepotOrder.&#34;stk_price&#34;]"/>
+    </TfrxFooter>
+    <TfrxHeader Name="Header1" Height="22.67718" Left="0" Top="162.51979" Width="748.34694">
+      <TfrxMemoView Name="Memo3" Left="0" Top="0" Width="30.23624" Height="18.89765" ShowHint="False" Text="序号"/>
+      <TfrxMemoView Name="Memo4" Left="37.7953" Top="0" Width="71.81107" Height="18.89765" ShowHint="False" Text="商品SKU号"/>
+      <TfrxMemoView Name="Memo5" Left="120.94496" Top="0" Width="60.47248" Height="18.89765" ShowHint="False" Text="商品名称"/>
+      <TfrxMemoView Name="Memo6" Left="264.5671" Top="0" Width="60.47248" Height="18.89765" ShowHint="False" Text="商品货号"/>
+      <TfrxMemoView Name="Memo7" Left="332.59864" Top="0" Width="34.01577" Height="18.89765" ShowHint="False" Text="品牌"/>
+      <TfrxMemoView Name="Memo8" Left="434.64595" Top="0" Width="30.23624" Height="18.89765" ShowHint="False" Text="尺寸"/>
+      <TfrxMemoView Name="Memo11" Left="627.40198" Top="0" Width="30.23624" Height="18.89765" ShowHint="False" Text="备注"/>
+      <TfrxLineView Name="Line5" Left="0" Top="22.67718" Width="721.89023" Height="0" ShowHint="False" Diagonal="True"/>
+      <TfrxMemoView Name="Memo9" Left="472.44125" Top="0" Width="45.35436" Height="18.89765" ShowHint="False" Text="仓位号"/>
+      <TfrxMemoView Name="Memo10" Left="578.26809" Top="0" Width="34.01577" Height="18.89765" ShowHint="False" Text="数量"/>
+    </TfrxHeader>
+  </TfrxReportPage>
+</TfrxReport>
